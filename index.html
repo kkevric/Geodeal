@@ -89,95 +89,132 @@
     </nav>
 
     <header id="home" class="header">
-      <div class="overlay"></div>
-
       <div
-        id="header-carousel"
+        id="carouselExampleIndicators"
         class="carousel slide carousel-fade"
         data-ride="carousel"
       >
-        <div class="container">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-caption d-none d-md-block">
-                <!-- <h1 class="carousel-title">Geodeal d.o.o.</h1> -->
-                <!-- <button class="btn btn-primary btn-rounded">Learn More</button> -->
-                <h2 class="anim">
-                  Inženirske in geološke storitve, <br />
-                  Strokovno in poslovno svetovanje, <br />
-                  Izdelava spletnih strani
-                </h2>
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <!-- <div class="container"> -->
+        <div class="carousel-inner">
+          <div class="carousel-item geo-photo active">
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="carousel-title anim">
+                Inženirske in geološke storitve, <br />
+                Strokovno in poslovno svetovanje
+              </h1>
+              <!-- <button class="btn btn-primary btn-rounded">Več ...</button> -->
+            </div>
+            <div class="infos container mb-4 mb-md-2 bljo">
+              <div class="title">
+                <h5 class="anim">Lokacija</h5>
+                <p class="font-small anim">Lendava, Slovenija</p>
+              </div>
+              <div class="socials text-md-right text-le">
+                <div class="row justify-content-between">
+                  <div class="col anim">
+                    <a href="tel:+386 31 683 244" class="d-block subtitle anim"
+                      ><i class="ti-microphone pr-2 anim"></i> +386 31 683
+                      244</a
+                    >
+                    <a
+                      href="mailto:renata.kevric@geodeal.si"
+                      class="d-block subtitle"
+                      ><i class="ti-email pr-2 anim-2"></i>
+                      renata.kevric@geodeal.si</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <!-- <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">We Make <br> Responsive Design</h1>
-                            <button class="btn btn-primary btn-rounded">Learn More</button>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h1 class="carousel-title">We Make <br> Simple Design</h1>
-                            <button class="btn btn-primary btn-rounded">Learn More</button>
-                          </div>
-                    </div> -->
           </div>
-        </div>
-      </div>
-
-      <div class="infos container mb-4 mb-md-2 bljo">
-        <div class="title">
-          <!-- <h6 class="subtitle font-weight-normal">Are locking for</h6> -->
-          <h5 class="anim">Lokacija</h5>
-          <p class="font-small anim">Lendava, Slovenija</p>
-        </div>
-        <div class="socials text-md-right text-le">
-          <div class="row justify-content-between">
-            <div class="col anim">
-              <a href="tel:+386 31 683 244" class="d-block subtitle anim"
-                ><i class="ti-microphone pr-2 anim"></i> +386 31 683 244</a
-              >
-              <a href="mailto:renata.kevric@geodeal.si" class="d-block subtitle"
-                ><i class="ti-email pr-2 anim-2"></i>
-                renata.kevric@geodeal.si</a
-              >
+          <div class="carousel-item webpage-photo">
+            <div class="overlay"></div>
+            <div class="carousel-caption carousel-caption-web d-none d-md-block">
+              <h1 class="carousel-title anim">
+                Izdelava <br />
+                spletnih strani
+              </h1>
+              <!-- <button class="btn btn-primary btn-rounded">Več...</button> -->
             </div>
-            <!-- <div class="col">
-                        <h6 class="subtitle font-weight-normal mb-2">Social Media</h6>
-                        <div class="social-links">
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-facebook"></i></a>
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-twitter-alt"></i></a>
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-google"></i></a>
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-pinterest-alt"></i></a>
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-instagram"></i></a>
-                            <a href="javascript:void(0)" class="link pr-1"><i class="ti-rss"></i></a>
-                        </div>
-                    </div> -->
+            <div class="infos container mb-4 mb-md-2 bljo">
+              <div class="title">
+                <!-- <h6 class="subtitle font-weight-normal">Are locking for</h6> -->
+                <h5 class="anim">Lokacija</h5>
+                <p class="font-small anim">Lendava, Slovenija</p>
+              </div>
+              <div class="socials text-md-right text-le">
+                <div class="row justify-content-between">
+                  <div class="col anim">
+                    <a href="tel:+386 31 683 244" class="d-block subtitle anim"
+                      ><i class="ti-microphone pr-2 anim"></i> +386 31 683
+                      244</a
+                    >
+                    <a
+                      href="mailto:renata.kevric@geodeal.si"
+                      class="d-block subtitle"
+                      ><i class="ti-email pr-2 anim-2"></i>
+                      renata.kevric@geodeal.si</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- </div> -->
       </div>
     </header>
 
     <section class="section" id="about">
       <div class="container">
-        <div class="aboutsection " >
-          <div>
+        <div class="aboutsection">
+          <div class="sizek">
             <h3 class="section-title">O nas</h3>
-            <p class="anim sizek">
+            <p class="anim">
+              Podjetje GEODEAL d.o.o. se ukvarja z dvema ključnima dejavnostima:
+              geološkimi storitvami ter strokovnim in poslovnim svetovanjem, kot
+              tudi z izdelavo spletnih strani.
+            </p>
+            <p style="text-decoration: underline">
+              Geološke in inženirske storitve ter strokovno in poslovno
+              svetovanje:
+            </p>
+            <p>
               Podjetje deluje na področju geoloških, geotehničnih,
               inženirsko-geoloških in hidrogeoloških preiskav. Dejavnost
               podjetja vključuje projektiranje, svetovanje in nadzor na področju
               geologije, geotehnologije, inženirske geologije in hidrogeologije.
+            </p>
+            <p>
               V podjetju se trudimo zagotavljati hitro odzivnost ter kakovostne
               storitve po ugodnih cenah.
             </p>
+            <p style="text-decoration: underline">Izdelava spletnih strani:</p>
+            <p>
+              Specializirani smo za oblikovanje in razvoj modernih,
+              funkcionalnih in privlačnih spletnih strani, ki pomagajo našim
+              strankam izstopati v digitalnem svetu. Ne glede na to, ali
+              potrebujete preprosto spletno stran ali kompleksno e-trgovinsko
+              platformo, je naša ekipa tukaj, da vaše ideje spremeni v
+              resničnost.
+            </p>
+            <p>
+              Naš cilj je zagotoviti vrhunske storitve, ki bodo izboljšale vaše
+              poslovanje in zadovoljile vse vaše potrebe. Kontaktirajte nas, da
+              skupaj dosežemo vaše cilje!
+            </p>
           </div>
           <div>
-            <img
-              class="proba"
-              src="assets/imgs/Capture.JPG"
-              alt=""
-            />
+            <img class="proba" src="assets/imgs/Capture.JPG" alt="" />
           </div>
         </div>
 
@@ -238,7 +275,6 @@
         <h3 class="section-title mb-4">Storitve</h3>
 
         <div class="row text-center">
-
           <div class="col-lg-4">
             <a href="javascript:void(0)" class="card border-0 text-dark">
               <img
@@ -277,7 +313,7 @@
           <div class="col-lg-4">
             <a href="javascript:void(0)" class="card border-0 text-dark">
               <img
-                class="card-img-top "
+                class="card-img-top"
                 src="assets/imgs/img-5.jpg"
                 alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, ollie Landing page"
               />
@@ -551,12 +587,15 @@
         <h3 class="section-title mb-5">Kontaktirajte nas</h3>
 
         <div id="contacts" class="section">
-          <div class="containerContact">
+          <!-- <div class="containerContact">
             <div class="row">
               <div class="col-md-6">
                 <p class="contact-text">
                   <b class="white">Nalov podjetja:</b>
-                  <span>Tomšičeva ulica 6,<br> 9220 Lendava, Slovenija</span>
+                  <span
+                    >Tomšičeva ulica 6,<br />
+                    9220 Lendava, Slovenija</span
+                  >
                 </p>
                 <p class="contact-text">
                   <b class="white">Mobitel:</b>
@@ -575,39 +614,57 @@
               </div>
               <div class="col-md-6">
                 <div class="g_map_wrapper">
-
-
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.665428550371!2d16.457903511424583!3d46.554304859929154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f4ab0da2cf13f%3A0x97c5bd0c9340ce1!2sTom%C5%A1i%C4%8Deva%20ulica%206%2C%209220%20Lendava!5e0!3m2!1shr!2ssi!4v1715943319478!5m2!1shr!2ssi" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2743.665428550371!2d16.457903511424583!3d46.554304859929154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f4ab0da2cf13f%3A0x97c5bd0c9340ce1!2sTom%C5%A1i%C4%8Deva%20ulica%206%2C%209220%20Lendava!5e0!3m2!1shr!2ssi!4v1715943319478!5m2!1shr!2ssi"
+                    width="100%"
+                    height="350"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
             </div>
-
-          </div>
+          </div> -->
         </div>
-        <!-- 
-        <div class="row align-items-center justify-content-between">
+
+        <div class="row align-items-center justify-content-between kont">
           <div class="col-md-8 col-lg-7">
-            <form class="contact-form">
+            <form
+              class="contact-form"
+              method="post"
+              action="./forms/form-to-email.php"
+            >
               <div class="form-row">
                 <div class="col form-group">
-                  <input type="text" class="form-control" placeholder="Ime" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Ime"
+                    name="name"
+                    required
+                  />
                 </div>
                 <div class="col form-group">
                   <input
                     type="email"
                     class="form-control"
                     placeholder="Email"
+                    name="email"
+                    required
                   />
                 </div>
               </div>
               <div class="form-group">
                 <textarea
-                  name=""
+                  name="message"
                   id=""
                   cols="30"
                   rows="5"
                   class="form-control"
                   placeholder="Vaše sporočilo"
+                  required
                 ></textarea>
               </div>
               <div class="form-group">
@@ -641,12 +698,12 @@
                   class="d-block subtitle"
                   ><i class="ti-email pr-2"></i> renata.kevric@geodeal.si</a
                 >
-                <p class="py-2"><i class="ti-email"></i> renata.kevric@geodeal.si</p>
-                <p href class="py-2"><i class="ti-microphone"></i> (123) 456-7890</p>
+                <!-- <p class="py-2"><i class="ti-email"></i> renata.kevric@geodeal.si</p>
+                <p href class="py-2"><i class="ti-microphone"></i> (123) 456-7890</p> -->
               </li>
             </ul>
           </div>
-        </div> -->
+        </div>
 
         <footer class="footer mt-5 border-top">
           <div class="row align-items-center justify-content-center">

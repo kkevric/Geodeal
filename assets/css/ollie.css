@@ -624,13 +624,17 @@ pre code {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
 
+}
+.kont{
+  flex-direction:column-reverse;
+}
 .container-about{
   text-align: center;
   
@@ -7125,10 +7129,15 @@ a.close.disabled {
   bottom: 20px;
   left: 15%;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 40px;
   color: #fff;
   text-align: center;
+}
+
+.carousel-caption-web {
+  padding-top: 160px;
+  
 }
 .carousel-caption h2{
   font-style: italic;
@@ -7442,9 +7451,9 @@ button.bg-dark:focus {
   content: "";
 }
 
-.d-none {
+/* .d-none {
   display: none !important;
-}
+} */
 
 .d-inline {
   display: inline !important;
@@ -10797,11 +10806,19 @@ button.bg-dark:focus {
   /* .text-le{
     text-align: left;
   } */
+  .caption-2{
+    /* margin-top:15%; */
+  }
 }
 
 @media (min-width: 768px) {
 
-  
+  /* .caption-2{
+    margin-top:15%;
+  } */
+  .kont {
+    flex-direction: row;
+  }
   .text-md-left {
     text-align: left !important;
   }
@@ -11078,6 +11095,9 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
+  position: absolute;
+  bottom: 7%;
+  margin-left: 50px
 }
 
 .infos * {
@@ -11663,12 +11683,13 @@ pre .code {
 
 
 
-.header {
+.header
+ {
   position: relative;
   height: 100vh;
   min-height: 600px;
   /* background-image: url(/public_html/assets/imgs/biel-morro-ZpKxweXHqkc-unsplash.jpg); */
-  background-image: url(../imgs/homeimage.jpg);
+  
   /* background-image: url("Tekst \ vašeg\ odlomka\ \(1).jpg"); */
   /* background: url(../imgs/biel-morro-ZpKxweXHqkc-unsplash.jpg); */
   /* background: url(http://geodeal.si/public_html/assets/imgs/biel-morro-ZpKxweXHqkc-unsplash.jpg) center center no-repeat ; */
@@ -11685,7 +11706,24 @@ pre .code {
           flex-direction: column;
 }
 
-.header .overlay {
+.geo-photo {
+  height: 85vh;
+  background-image: url(../imgs/homeimage.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.webpage-photo {
+  height: 85vh;
+  background-image: url(../imgs/kari-shea-1SAnrIxw5OY-unsplash.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.overlay
+{
   position: absolute;
   top: 0;
   left: 0;
@@ -11698,6 +11736,7 @@ pre .code {
   opacity: .5;
 }
 
+
 .header .carousel {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -11705,7 +11744,7 @@ pre .code {
           flex-grow: 1;
   width: 100%;
   text-align: left;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -11731,9 +11770,14 @@ pre .code {
 
 .header .carousel .carousel-caption {
   position: static;
-  text-align: left;
+  text-align: center;
   display: block !important;
+  /* margin-top:10%; */
+ 
 }
+/* .caption-2{
+  margin-top:15%;
+} */
 
 .header-title {
   font-size: 2.4rem;
@@ -11770,7 +11814,7 @@ pre .code {
 @media (max-width: 767.98px) {
   .header {
     height: auto;
-    padding: 50px 0;
+    /* padding: 50px 0; */
   }
   .header .carousel {
     margin-top: 100px;
@@ -11783,6 +11827,7 @@ pre .code {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0 10px;
+
   }
   .infos .socials,
   .infos .title {
